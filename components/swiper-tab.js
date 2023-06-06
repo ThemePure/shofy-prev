@@ -1,11 +1,12 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import product_data from '../data/product-data';
 import Link from 'next/link';
 import Image from 'next/image';
 import product_data_2 from '../data/product-data-2';
 import product_data_3 from '../data/product-data-3';
+import { Navigation, Scrollbar } from 'swiper';
 
 
 const setting_1 = {
@@ -47,7 +48,94 @@ const setting_1 = {
       },
     }, 
   }
+
+  const setting_2 = {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    observer: true,
+    observeParents: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".tp-shop-button-next",
+        prevEl: ".tp-shop-button-prev",
+    },
+    scrollbar: {
+        el: '.tp-inner-shop-scrollbar',
+        draggable: true,
+        dragClass: 'tp-swiper-scrollbar-drag',
+        snapOnRelease: true,
+      },
+    breakpoints: {
+        '1200': {
+            slidesPerView: 3,
+        },
+        '992': {
+            slidesPerView: 3,
+        },
+        '768': {
+            slidesPerView: 2,
+        },
+        '576': {
+            slidesPerView: 1,
+        },
+        '0': {
+            slidesPerView: 1,
+        },
+    },
+}
+
+const setting_3 = {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    observer: true,
+    observeParents: true,
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".tp-other-button-next",
+        prevEl: ".tp-other-button-prev",
+    },
+    scrollbar: {
+        el: '.tp-inner-other-scrollbar',
+        draggable: true,
+        dragClass: 'tp-swiper-scrollbar-drag',
+        snapOnRelease: true,
+      },
+    breakpoints: {
+        '1200': {
+            slidesPerView: 3,
+        },
+        '992': {
+            slidesPerView: 3,
+        },
+        '768': {
+            slidesPerView: 2,
+        },
+        '576': {
+            slidesPerView: 1,
+        },
+        '0': {
+            slidesPerView: 1,
+        },
+    },
+}
+
+
 const SwiperTab = () => {
+
+    const [isLoop, setIsLoop] = useState(false)
+    useEffect(() => {
+       setIsLoop(true)
+    }, []) 
     return (
         <>
 
@@ -123,7 +211,7 @@ const SwiperTab = () => {
                     <div className="tab-content" id="nav-tabContent">
                         <div className="tab-pane fade show active" id="nav-product" role="tabpanel" aria-labelledby="nav-product-tab" tabIndex="-1">
                             <div className="tp-inner-product-slider">
-                                <Swiper {...setting_1} className="tp-inner-product-slider-active swiper-container">
+                                <Swiper {...setting_1} modules={[Navigation, Scrollbar]} loop={isLoop}  className="tp-inner-product-slider-active swiper-container">
                                    {product_data.map((item, i) => 
                                     <SwiperSlide key={i} className="tp-inner-item w-img swiper-slide">
                                         <Link href={item.link} target="_blank">
@@ -137,7 +225,7 @@ const SwiperTab = () => {
                         </div>
                         <div className="tab-pane fade" id="nav-shop" role="tabpanel" aria-labelledby="nav-shop-tab" tabIndex="-1">
                             <div className="tp-inner-shop-slider">                                
-                                <Swiper {...setting_1} className="tp-inner-shop-slider-active swiper-container">
+                                <Swiper {...setting_2} modules={[Navigation, Scrollbar]} loop={isLoop}   className="tp-inner-shop-slider-active swiper-container">
                                     {product_data_2.map((product, i) => 
                                         <SwiperSlide key={i} className="tp-inner-item w-img swiper-slide">
                                             <Link href={product.link} target="_blank">
@@ -151,7 +239,7 @@ const SwiperTab = () => {
                         </div>
                         <div className="tab-pane fade" id="nav-other" role="tabpanel" aria-labelledby="nav-other-tab" tabIndex="-1">
                             <div className="tp-inner-other-slider">
-                                <Swiper {...setting_1} className="tp-inner-other-slider-active swiper-container">
+                                <Swiper {...setting_3} modules={[Navigation, Scrollbar]} loop={isLoop}   className="tp-inner-other-slider-active swiper-container">
                                     {product_data_3.map((item_3, index) =>
                                         <SwiperSlide key={index} className="tp-inner-item w-img swiper-slide">
                                             <Link href={item_3.link} target="_blank">

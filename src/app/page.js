@@ -7,6 +7,7 @@ import { EffectFade, Navigation } from 'swiper';
 import useSticky from '../../components/hooks/use-sticky';
 import ScrollToTop from '../../components/hooks/scroll-to-top';
 import Sidebar from '../../components/sidebar';
+import Count from '../../components/hooks/count';
 
 const setting = {
   slidesPerView: 1,
@@ -136,9 +137,9 @@ const Home = () => {
                 <div className="col-xl-12">
                     <div className="tp-hero-thumb-wrapper p-relative z-index-1">
                         <div className="tp-hero-thumb-logo">
-                            <img className="el first next_js" src="/assets/img/hero/logo/next-js.png" alt="" data-parallax='{"y": -100, "smoothness": 10}' />
-                            <img className="woo second" src="/assets/img/hero/logo/express.png" alt="" data-parallax='{"y": -100, "smoothness": 10}' />
-                            <img className="wp third" src="/assets/img/hero/logo/m-db.png" alt="" data-parallax='{"y": -100, "smoothness": 10}' />
+                            <img className="el first " style={{borderRadius: "none"}} src="/assets/img/hero/logo/next-js.png" alt="" data-parallax='{"y": -100, "smoothness": 10}' />
+                            <img className="woo second next_js" style={{borderRadius: "none"}} src="/assets/img/hero/logo/express.png" alt="" data-parallax='{"y": -100, "smoothness": 10}' />
+                            <img className="wp third next_js" src="/assets/img/hero/logo/m-db.png" alt="" data-parallax='{"y": -100, "smoothness": 10}' />
                         </div>
                         <div className="tp-hero-main-img w-img">
                             <img src="/assets/img/hero/hero-img.jpg" alt="theme-pure" />
@@ -169,7 +170,10 @@ const Home = () => {
                                 </span>
                             </div>
                             <div className="tp-counter-content">
-                                <h4><span className="purecounter" data-purecounter-duration="1" data-purecounter-end="7000">7600</span>+</h4>
+                                <h4><span className="purecounter" data-purecounter-duration="1" data-purecounter-end="7000">
+                                    <Count number={7000} add_style={true} />
+                                    </span>
+                                </h4>
                                 <p>Clients Trust Theme_Pure</p>
                             </div>
                         </div>
@@ -696,7 +700,7 @@ import { useState } from 'react';
 
 {/* <!-- footer  --> */}
     <footer>
-        <div className="tp-footer-area pb-55 pt-150 p-relative z-index-1 fix" data-bg-color="#ECEEF3">
+        <div className="tp-footer-area pb-55 pt-150 p-relative z-index-1 fix" style={{backgroundColor: "#ECEEF3"}}>
             <div className="tp-footer-shape">
                 <img className="tp-footer-shape-1" src="/assets/img/footer/footer-shape-1.png" alt="theme-pure" />
                 <img className="tp-footer-shape-2" src="/assets/img/footer/footer-shape-2.png" alt="theme-pure" />

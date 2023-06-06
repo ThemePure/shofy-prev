@@ -1126,6 +1126,7 @@ div.demo img {
   background-color: transparent;
   padding: 8px 24px;
   color: var(--tp-common-black);
+  text-decoration: none;
 }
 .tp-btn-border:hover {
   background-color: var(--tp-theme-primary);
@@ -6638,8 +6639,22 @@ body .ui-tooltip {
 .next_js{
   border-radius: 30px !important;
 }
+ 
+.tp-hero-thumb-logo .third .next_js{
+  border-radius: 0% !important;
+}
 
-.tp-hero-thumb-logo .el, .tp-hero-thumb-logo .woo, .tp-hero-thumb-logo .next_js{
+
+.tp-hero-thumb-logo .first
+{
   border-radius: 50% !important;
 
+}
+
+.tp-header-btn a{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none !important;
 }

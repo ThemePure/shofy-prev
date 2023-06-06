@@ -1,9 +1,6 @@
 "use client"
 import "../../styles/index.scss";
-// export const metadata = {
-//   title: 'Shofy - Multipurpose eCommerce Next js Template',
-//   description: 'Shofy - Multipurpose eCommerce Next js Template',
-// }
+
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
 }

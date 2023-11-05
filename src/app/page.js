@@ -234,7 +234,7 @@ const Home = () => {
             <div className="row">
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="tp-home-item w-img text-center mb-50">
-                        <a href="https://shofy-client.vercel.app/" target="_blank">
+                        <a href="https://shofy-client.netlify.app/" target="_blank">
                             <div className="tp-home-thumb fix">
                                 <img src="/assets/img/home/home-1.jpg" alt="theme-pure" />
                             </div>
@@ -246,7 +246,7 @@ const Home = () => {
                 </div>
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="tp-home-item w-img text-center mb-50">
-                        <a href="https://shofy-client.vercel.app/home-2" target="_blank">
+                        <a href="https://shofy-client.netlify.app/home-2" target="_blank">
                             <div className="tp-home-thumb fix">
                                 <img src="/assets/img/home/home-2.jpg" alt="theme-pure" />
                             </div>
@@ -258,7 +258,7 @@ const Home = () => {
                 </div>
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="tp-home-item w-img text-center mb-50">
-                        <a href="https://shofy-client.vercel.app/home-3" target="_blank">
+                        <a href="https://shofy-client.netlify.app/home-3" target="_blank">
                             <div className="tp-home-thumb fix">
                                 <img src="/assets/img/home/home-3.jpg" alt="theme-pure" />
                             </div>
@@ -270,7 +270,7 @@ const Home = () => {
                 </div>
                 <div className="col-xl-4 col-lg-4 col-md-6">
                     <div className="tp-home-item w-img text-center mb-50">
-                        <a href="https://shofy-client.vercel.app/home-4" target="_blank">
+                        <a href="https://shofy-client.netlify.app/home-4" target="_blank">
                             <div className="tp-home-thumb fix">
                                 <img src="/assets/img/home/home-4.jpg" alt="theme-pure" />
                             </div>

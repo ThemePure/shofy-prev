@@ -9,27 +9,27 @@ import product_img_5 from "../public/assets/img/inner/product/inner-6.jpg";
 const product_data = [
     {
         id: 1,
-        link: "https://shofy-client.vercel.app/product-details",
+        link: "https://shofy-client.netlify.app/product-details",
         img: product_img_1,
     },
     {
         id: 2,
-        link: "https://shofy-client.vercel.app/product-details-video",
+        link: "https://shofy-client.netlify.app/product-details-video",
         img: product_img_2,
     },
     {
         id: 3,
-        link: "https://shofy-client.vercel.app/product-details-countdown",
+        link: "https://shofy-client.netlify.app/product-details-countdown",
         img: product_img_3,
     },
     {
         id: 4,
-        link: "https://shofy-client.vercel.app/product-details",
+        link: "https://shofy-client.netlify.app/product-details",
         img: product_img_4,
     },
     {
         id: 5,
-        link: "https://shofy-client.vercel.app/product-details-swatches",
+        link: "https://shofy-client.netlify.app/product-details-swatches",
         img: product_img_5,
     },
 ]

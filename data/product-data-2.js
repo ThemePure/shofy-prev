@@ -12,42 +12,42 @@ import product_img_8 from "../public/assets/img/inner/shop/checkout.jpg";
 const product_data_2 = [
     {
         id: 1,
-        link: "https://shofy-client.vercel.app/shop-category",
+        link: "https://shofy-client.netlify.app/shop-category",
         img: product_img_1,
     },
     {
         id: 2,
-        link: "https://shofy-client.vercel.app/shop",
+        link: "https://shofy-client.netlify.app/shop",
         img: product_img_2,
     },
     {
         id: 3,
-        link: "https://shofy-client.vercel.app/shop-right-sidebar",
+        link: "https://shofy-client.netlify.app/shop-right-sidebar",
         img: product_img_3,
     },
     {
         id: 4,
-        link: "https://shofy-client.vercel.app/shop-hidden-sidebar",
+        link: "https://shofy-client.netlify.app/shop-hidden-sidebar",
         img: product_img_4,
     },
     {
         id: 5,
-        link: "https://shofy-client.vercel.app/cart",
+        link: "https://shofy-client.netlify.app/cart",
         img: product_img_5,
     },
     {
         id: 6,
-        link: "https://shofy-client.vercel.app/wishlist",
+        link: "https://shofy-client.netlify.app/wishlist",
         img: product_img_6,
     },
     {
         id: 7,
-        link: "https://shofy-client.vercel.app/compare",
+        link: "https://shofy-client.netlify.app/compare",
         img: product_img_7,
     },
     {
         id: 8,
-        link: "https://shofy-client.vercel.app/checkout",
+        link: "https://shofy-client.netlify.app/checkout",
         img: product_img_8,
     },
 ]
